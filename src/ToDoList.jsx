@@ -1,14 +1,42 @@
-import React,{usestate}from"react"
+import React,{useState}from"react"
 
 function ToDoList(){
 
-    const [tasks,setTasks]=usestate([]);
-    const [newTask,setnewTask]=usestate("");
+    const [tasks, setTasks]= useState([]);
+    const [newTask,setnewTask]= useState("");
 
-    function handleInputChange(event){}
+    function handleInputChange(event){
+
+    }
+
+    function addTask(){
+
+    }
+
+    function deleteTask(index){
+
+    }
+
+    function moveTaskup(index){
+
+    }
+
+     function moveTaskDown(index){
+
+    }
 
 
-    return(<></>);
+    return(<div className="to-do-list">
+        <h1>To-Do-List</h1>
+
+        <div>
+            <input
+               type="text"
+            />
+
+        </div>
+        
+        </div>);
 
 }
 export default ToDoList
