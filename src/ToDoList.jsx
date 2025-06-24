@@ -1,4 +1,4 @@
-import React,{useState}from"react"
+import React,{useState}from"react";
 
 function ToDoList(){
 
@@ -12,9 +12,17 @@ function ToDoList(){
 
     function addTask(){
 
+        if (newTask.trim() !== "") {
+        setTasks(t=>  [...t, newTask]);
+        setNewTask(""); // Clear the input field after adding the task
+
+      }
     }
 
     function deleteTask(index){
+    
+     const updatedTasks = tasks.filter((_, i) => i !== index);
+        setTasks(updatedTasks);
 
     }
 
